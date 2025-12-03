@@ -24,16 +24,6 @@ body {
   text-align: center;/* centrerad på sidan */
 }
 
-/* verkar inte behövas just nu
-.hero {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-*/
-
 /* Solsytemet rubrik*/
 h1 {
   font-size: 4rem;
@@ -46,6 +36,9 @@ p {
   opacity: 0.8;
 }
 
+
+/* Planet styling */
+
 /* Planet lista styling*/
 .planet-nav ul {
   list-style: none;
@@ -56,7 +49,7 @@ p {
   justify-content: center;
 }
 
-/* Planet knapp styling*/
+/* Planet knapp styling */
 .planet-nav button {
   width: 40px;
   height: 40px;
@@ -67,6 +60,7 @@ p {
   cursor: pointer;
   transition: 0.3s;
 }
+
 
 /* Planet knapp hover effekt*/
 .planet-nav button:hover {
@@ -94,5 +88,12 @@ p {
 
 /* Info-sektionen, gömd tills att den klickas på */
 .hidden {
-  display: none;
+    display: none;
 }
+
+/*
+.planet0 {
+  width: 118px;
+  border-radius: 50%;
+}
+*/
