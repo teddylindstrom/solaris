@@ -1,6 +1,11 @@
+// Simulerad dynamisk API-nyckel
+async function getApiKey() {
+    return "solarishbg"; // API-nyckel från gisten
+}
+
 //console.log("hej");
 //deklarerar en asynkron funktion som heter fetchKeys
-async function fetchKeys () {
+async function fetchKeys () { 
   let resp = await fetch(
     "https://4a610o1px9.execute-api.eu-north-1.amazonaws.com/key"
   );

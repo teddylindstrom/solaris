@@ -1,3 +1,4 @@
+/*Grundstil för hela sidan*/
 header h1 {
     font-size: 3rem;
     margin: 0;
@@ -14,9 +15,9 @@ header h3 {
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(to bottom, #0a0f25, #1c2a4a);
-  color: white;
-  text-align: center;
+  background: linear-gradient(to bottom, #0a0f25, #1c2a4a);/* Svart bakgrund */
+  color: white;/* Vit text */
+  text-align: center;/* centrerad på sidan */
 }
 
 .hero {
