@@ -1,17 +1,21 @@
 /*Grundstil för hela sidan*/
+
+/*Header Solsystemet*/
 header h1 {
     font-size: 3rem;
-    margin: 0;
+    margin: 20px 0;
     color: white;
     font-weight: 600;
 }
+/*Header solaris*/
 header h3 {
     font-size: rem;
-    margin: 0;
+    margin: 20px 0;
     color: rgb(228, 160, 24)
 
 }
 
+/*Body styling*/
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
@@ -20,6 +24,7 @@ body {
   text-align: center;/* centrerad på sidan */
 }
 
+/* verkar inte behövas just nu
 .hero {
   height: 100vh;
   display: flex;
@@ -27,17 +32,21 @@ body {
   justify-content: center;
   align-items: center;
 }
+*/
 
+/* Solsytemet rubrik*/
 h1 {
   font-size: 4rem;
   margin-bottom: 20px;
 }
 
+/* Utforska vårt solsystem text*/
 p {
   font-size: 1.2rem;
   opacity: 0.8;
 }
 
+/* Planet lista styling*/
 .planet-nav ul {
   list-style: none;
   padding: 0;
@@ -47,6 +56,7 @@ p {
   justify-content: center;
 }
 
+/* Planet knapp styling*/
 .planet-nav button {
   width: 40px;
   height: 40px;
@@ -58,7 +68,9 @@ p {
   transition: 0.3s;
 }
 
+/* Planet knapp hover effekt*/
 .planet-nav button:hover {
   opacity: 1;
   transform: scale(1.2);
 }
+
