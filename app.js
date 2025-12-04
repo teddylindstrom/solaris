@@ -26,7 +26,7 @@ async function init() {
 // Kör init() direkt
 init();
 
-//console.log("hej");
+
 //deklarerar en asynkron funktion som heter fetchKeys
 async function fetchKeys () { 
   let resp = await fetch(
@@ -46,3 +46,56 @@ let resp = await fetch('https://4a6l0o1px9.execute-api.eu-north-1.amazonaws.com/
 let data = await resp.json();
 
 console.log(data);
+
+async function loadPlanets() {
+    try {
+        // Skickar GET-request till API:et
+        const response = await fetch(BASE_URL, {
+            headers: {
+                "x-zocom": API_KEY // API:et kräver denna header
+            }
+        });
+
+        // Kollar om svaret är OK (status 200-299)
+        if (!response.ok) throw new Error("Fel vid hämtning av planeter");
+
+        // Gör om svaret till JSON
+        const data = await response.json();
+
+        // Skickar vidare planetlistan till funktion som ritar ut dem på sidan
+        renderPlanetList(data);
+
+    } catch (err) {
+        // Felhantering vid problem med fetch eller JSON
+        console.error(err);
+        document.getElementById("planet-list").innerHTML =
+            "<p>Kunde inte ladda planeter.</p>";
+    }
+}
+
+//Vsisning av planetlista på sidan
+function renderPlanetList(planets) {
+    // Hämtar containern där planeterna ska visas
+    const list = document.getElementById("planet-list");
+
+    // Rensar gamla element (om sidan laddas om på nytt)
+    list.innerHTML = "";
+
+    // Loopar igenom alla planeter som kom från API:et
+    planets.forEach(planet => {
+        // Skapar ett nytt div-element för varje planet
+        const el = document.createElement("div");
+
+        // Lägger till CSS-klassen .planet som styr utseendet
+        el.classList.add("planet");
+
+        // Sätter texten på "knappen" till planetens namn
+        el.textContent = planet.name;
+
+        // Lägger till klick-event: när man klickar → hämta mer info
+        el.addEventListener("click", () => loadPlanetInfo(planet.id));
+
+        // Lägger till planeten i listan på sidan
+        list.appendChild(el);
+    });
+}
