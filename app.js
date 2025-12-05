@@ -39,22 +39,25 @@ const BASE_URL = "https://4a6l0o1px9.execute-api.eu-north-1.amazonaws.com";
 
 //Fel i Console???
 async function fetchBodies() {
+    //console.log("hej")
     try {
         let resp = await fetch(`${BASE_URL}/bodies`, {
     method: 'GET',
     headers: { 'x-zocom': 'solaris-zaCmZA74PLKCrD8Y' } //API nyckel har korrekt format, header namn är rätt
 });
-
+//console.log("hej2")
 // Kollar om svaret är OK (status 200-299)
-if (!response.ok) throw new Error("Fel vid hämtning av planeter");
+console.log(resp);
+//if (!response.ok) throw new Error("Fel vid hämtning av planeter");
 
 //Väntar på svaret från servern, json
+
 const data = await resp.json();
 console.log(data);
-renderPlanetList(data); //anropar renderPlanetList med data som argument
+
+renderPlanetList(data.bodies); //anropar renderPlanetList med data som argument
     } catch (error) {
-        
-    }
+    console.log(error.message)}
 }
 
 // async function loadPlanets() {
@@ -107,7 +110,7 @@ function renderPlanetList(planets) {
         // Lägger till planeten i listan på sidan
         list.appendChild(el);
     });
-    //console.log("hej");
+    console.log("hej");
 }
 
 // Funktion för att ladda och visa mer info om en planet
