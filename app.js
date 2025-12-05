@@ -111,6 +111,14 @@ function renderPlanetList(planets) {
         list.appendChild(el);
     });
     console.log("hej");
+    //Overlay
+    function on() {
+    document.getElementById("overlay").style.display = "flex";
+    }
+
+    function off() {
+    document.getElementById("overlay").style.display = "none";
+    }
 }
 
 // Funktion för att ladda och visa mer info om en planet
