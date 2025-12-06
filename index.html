@@ -9,45 +9,45 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <main>
+    
+    <!--Oviktigt-->
+    <!-- Den här listan ska inte användas Planet lista dynamiskt -->
+    <!-- <section id="planet-list" class="planet-list" class="hero">
+    </section> -->
 
-<header>
-<h1>SOLSYSTEMET</h1>
-<h2>SOLARIS</h2>
-</header>
+  <!--Rubrik-->
+  <header>
+  <h1>SOLSYSTEMET</h1>
+  <h2>SOLARIS</h2>
+  </header>
+    
+  <!--Detaljerad info om vardera planet när du klickar på dem-->
+  <section id="planet-info" class="planet-info hidden"></section>
 
-<main>
-  
-  <!-- Den här listan ska inte användas Planet lista dynamiskt -->
-  <!-- <section id="planet-list" class="planet-list" class="hero">
-  </section> -->
-  
-<!--Detaljerad info om vardera planet när du klickar på dem-->
-<section id="planet-info" class="planet-info hidden"></section>
+      <!--Vågrätt meny som visar planeter-->
+      <nav class="planet-nav">
+        <ul class="planets">
+          
+          <!--Solen-->
+          <li id="planet0"><button class="planet" aria-label="planet">Solen</button></li>
 
-    <!--Vågrätt meny som visar planeter-->
-    <nav class="planet-nav">
-      <ul class="planets">
-        
-        <!--Solen-->
-        <li id="planet0"><button class="planet" aria-label="planet">Solen</button></li>
+          <!--Lista med planeter-->
+          <li id="planet1"><button class="planet" aria-label="planet 1">Merkurius</button></li>
+          <li id="planet2"><button class="planet" aria-label="planet 2">Venus</button></li>
+          <li id="planet3"><button class="planet" aria-label="planet 3">Jorden</button></li>
+          <li id="planet4"><button class="planet" aria-label="planet 4">Mars</button></li>
+          <li id="planet5"><button class="planet" aria-label="planet 5">Jupiter</button></li>
+          <li id="planet6"><button class="planet" aria-label="planet 6">Saturnus</button></li>
+          <li id="planet7"><button class="planet" aria-label="planet 7">Uranus</button></li>
+          <li id="planet8"><button class="planet" aria-label="planet 2">Neptunus</button></li>
+        </ul>
+      </nav>
+    </section>
+  </main>
 
-        <!--Lista med planeter-->
-        <li id="planet1"><button class="planet" aria-label="planet 1">Merkurius</button></li>
-        <li id="planet2"><button class="planet" aria-label="planet 2">Venus</button></li>
-        <li id="planet3"><button class="planet" aria-label="planet 3">Jorden</button></li>
-        <li id="planet4"><button class="planet" aria-label="planet 4">Mars</button></li>
-        <li id="planet5"><button class="planet" aria-label="planet 5">Jupiter</button></li>
-        <li id="planet6"><button class="planet" aria-label="planet 6">Saturnus</button></li>
-        <li id="planet7"><button class="planet" aria-label="planet 7">Uranus</button></li>
-        <li id="planet8"><button class="planet" aria-label="planet 2">Neptunus</button></li>
-      </ul>
-    </nav>
-  </section>
-  
-</main>
-
-<!--Importerar API-nyckelfilen och huvud-JS-->
-<script src="app.js"></script>
+  <!--Importerar API-nyckelfilen och huvud-JS-->
+  <script src="app.js"></script>
 
 </body>
 </html>

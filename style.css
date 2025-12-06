@@ -18,14 +18,6 @@ header h2 {
 
 
 /*Body styling*/
-body {
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(to bottom, #0a0f25, #1c2a4a);/* Svart bakgrund */
-  color: white;/* Vit text */
-  text-align: center;/* centrerad på sidan */
-}
-
 
 /* Solsytemet rubrik*/
 h1 {
@@ -38,6 +30,16 @@ h1 {
 p {
   font-size: 1.2rem;
   opacity: 0.8;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(90deg, #0a0f25, #1c2a4a);/* Svart bakgrund */
+  color: white;/* Vit text */
+  text-align: center;/* centrerad på sidan */
+  overflow-x: hidden;
+  place-content: 80vh;
 }
 
 
