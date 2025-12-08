@@ -33,14 +33,27 @@ p {
 }
 
 body {
-  margin: 100px;
-  padding: 20px;
-  font-family: 'Poppins', sans-serif;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
   background: linear-gradient(90deg, #0a0f25, #1c2a4a);/* Svart bakgrund */
+  font-family: 'Poppins', sans-serif;
   color: white;/* Vit text */
   text-align: center;/* centrerad på sidan */
-  overflow-x: hidden;
+  letter-spacing: 1px;
+  overflow-y: hidden;
   
+}
+
+.title--default {
+  font-size: 4em;
+  letter-spacing: 0.2rem;
+}
+.subtitle--default {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 100;
+  color: #ffd029;
+  letter-spacing: 1rem;
 }
 
 
@@ -78,8 +91,7 @@ border: 1px solid #fff;
 border-radius: 8px;
 cursor: pointer;
 transition: background-color 0.3s, color 0.2s
-*hover*/
-
+/*hover*/
 /*/
 
 .planet:hover {
@@ -105,7 +117,7 @@ background: #222; /*mörk effekt vid hover*/
   opacity: 0.9;
 }
 
-.planet-mercury {
+.planet-mercurialis {
   background-color: #4a90e2; /* färg från Figma */
   width: 60px;               /* storlek enligt design */
   height: 60px;
@@ -139,7 +151,7 @@ background: #222; /*mörk effekt vid hover*/
   opacity: 0.9;
 }
 
-.planet-earth {
+.planet-tellus {
   background-color: #4a90e2; /* färg från Figma */
   width: 60px;               /* storlek enligt design */
   height: 60px;
@@ -177,7 +189,7 @@ background: #222; /*mörk effekt vid hover*/
   opacity: 0.9;
 }
 
-.planet-jupiter {
+.planet-lovis/*jupiter*/ {
   background-color: #4a90e2; /* färg från Figma */
   width: 60px;               /* storlek enligt design */
   height: 60px;
@@ -196,7 +208,7 @@ background: #222; /*mörk effekt vid hover*/
   opacity: 0.9;
 }
 
-.planet-saturn {
+.planet-saturnus {
   background-color: #4a90e2; /* färg från Figma */
   width: 60px;               /* storlek enligt design */
   height: 60px;
@@ -234,7 +246,7 @@ background: #222; /*mörk effekt vid hover*/
   opacity: 0.9;
 }
 
-.planet-neptune {
+.planet-neptunus {
   background-color: #4a90e2; /* färg från Figma */
   width: 60px;               /* storlek enligt design */
   height: 60px;
