@@ -10,33 +10,6 @@ let API_KEY = "";
 // Bas-URL för API:et. Alla API-anrop bygger på denna URL.
 const BASE_URL = "https://4a6l0o1px9.execute-api.eu-north-1.amazonaws.com";
 
-// // En startfunktion som körs direkt när appen laddar
-// async function init() {
-//     try {
-//         // Hämtar API-nyckeln från config.js (VG-krav)
-//         //API_KEY = await getApiKey(); //VG
-
-//         // När API-nyckeln hämtats: ladda planetlistan
-//         loadPlanets();
-//     } catch (err) {
-//         // Om något går fel visas fel i konsolen
-//         console.error("Kunde inte hämta API-nyckel.", err);
-//     }
-// }
-// Kör init() direkt
-//init();
-
-
-// //deklarerar en asynkron funktion som heter fetchKeys
-// //async function fetchKeys () { 
-// //  let resp = await fetch(
-// //    "https://4a610o1px9.execute-api.eu-north-1.amazonaws.com/key"
-// //  );
-// }
-// //anropar funktionen fetchKeys och loggar resultatet till konsolen
-// fetchKeys();
-// console.log(fetchKeys());
-
 //Fel i Console???
 async function fetchBodies() {
     //console.log("hej")
@@ -59,30 +32,6 @@ renderPlanetList(data.bodies); //anropar renderPlanetList med data som argument
     } catch (error) {
     console.log(error.message)}
 }
-
-// async function loadPlanets() {
-// try {
-//     // Skickar GET-request till API:et
-//     const response = await fetch(BASE_URL, {
-//         headers: {
-//             "x-zocom": API_KEY // API:et kräver denna header
-//         }
-//     });
-
-//     // Gör om svaret till JSON
-//     const data = await response.json();
-
-//     // Skickar vidare planetlistan till funktion som ritar ut dem på sidan
-//     renderPlanetList(data);
-//     //console.log("hwja");
-
-// } catch (err) {
-//     // Felhantering vid problem med fetch eller JSON
-//     console.error(err);
-//     document.getElementById("planet-list").innerHTML =
-//         "<p>Kunde inte ladda planeter.</p>";
-// }
-// }
 
 //Vsisning av planetlista på sidan
 function renderPlanetList(planets) {

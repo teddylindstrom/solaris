@@ -1,91 +1,78 @@
 /*Grundstil för hela sidan*/
+
+/*Body styling*/
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0; /* Tar bort standardmarginalen */
+  background: linear-gradient(90deg, #0c164d, #190B22);/* Svart bakgrund med gradvis blå */
+  font: 'Lora', serif; /* Grundfont för sidan */
+  color: white;/* Vit text */
+  text-align: center;/* centrerad på sidan */
+  letter-spacing: 1px; /* Lite avstånd mellan bokstäverna */
+  overflow-y: hidden; /* Ingen scroll på y-axeln */
+}
+
 /*Header Solsystemet*/
 header h1 {
     font-size: 3rem;
+    font: secular one, sans-serif;
     margin: 20px 0;
     color: white;
     font-weight: 600;
+    text-align: right;
+    padding: 30px;
+    padding-bottom: 10px;
 }
 /*Header solaris*/
 header h2 {
     font-size: rem;
-    margin: 20px 0;
-    color: rgb(228, 160, 24)
-
-}
-
-
-/*Body styling*/
-
-/* Solsytemet rubrik*/
-h1 {
-  font-size: 4rem;
-  margin-bottom: 20px 0;
-}
-
-
-/* Utforska vårt solsystem text*/
-p {
-  font-size: 1.2rem;
-  opacity: 0.8;
-}
-
-body {
-  width: 100vw;
-  height: 100vh;
-  margin: 0;
-  background: linear-gradient(90deg, #0a0f25, #1c2a4a);/* Svart bakgrund */
-  font-family: 'Poppins', sans-serif;
-  color: white;/* Vit text */
-  text-align: center;/* centrerad på sidan */
-  letter-spacing: 1px;
-  overflow-y: hidden;
-  
-}
-
-.title--default {
-  font-size: 4em;
-  letter-spacing: 0.2rem;
-}
-.subtitle--default {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 100;
-  color: #ffd029;
-  letter-spacing: 1rem;
+    font: lora, serif;
+    color: rgb(228, 160, 24);
+    text-align: right;
+    padding: 10px;
+    padding-right: 30px;
+    padding-top: 5px;
 }
 
 .solen {
-    background-color: #4a90e2; /* färg från Figma */
-  width: 60px;               /* storlek enligt design */
-  height: 60px;
-  border-radius: 50%;        /* gör det cirkulärt om planeter ska se ut som cirklar */
-  border: 2px solid #ffffff; /* t.ex. vit kant */
+  /*mått rektangel*/
+  position: absolute;
+  width: 118px;
+  height: 740.12px;
+  left: 0px;
+  top: 79.94px;
+  /*mått cirkel*/
+  width: 1278px;
+  height: 1278px;
+  left: -1160px;
+  top: -189px;
+  box-shadow: 0px 0px 250px rgba(255, 208, 41, 0.2); /* skugga för att ge en glödande effekt */
   display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;               /* textfärg */
-  font-size: 0.9rem;         /* textstorlek enligt design */
+  border-radius: 50%; /* gör att planeter ser ut som cirklar */
   cursor: pointer;
   transition: transform 0.2s, opacity 0.2s;
+  background: #FFD029;
+  box-shadow: 0px 0px 250px rgba(255, 208, 41, 0.2);
+  font-size: 0;
 }
 .solen:hover {
   transform: scale(1.2);     /* hover-effekt enligt design */
   opacity: 0.9;
 }
 
-.merkurius {
-  background-color: #4a90e2; /* färg från Figma */
-  width: 60px;               /* storlek enligt design */
-  height: 60px;
-  border-radius: 50%;        /* gör det cirkulärt om planeter ska se ut som cirklar */
-  border: 2px solid #ffffff; /* t.ex. vit kant */
+.merkurius { 
+  border-radius: 50%;/* gör att planeter ser ut som cirklar */
   display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;               /* textfärg */
-  font-size: 0.9rem;         /* textstorlek enligt design */
   cursor: pointer;
   transition: transform 0.2s, opacity 0.2s;
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  left: 203px;
+  top: 443px;
+  background: #888888;
+  font-size: 0;
 }
 .merkurius:hover {
   transform: scale(1.2);     /* hover-effekt enligt design */
@@ -93,18 +80,16 @@ body {
 }
 
 .venus {
-  background-color: #4a90e2; /* färg från Figma */
-  width: 60px;               /* storlek enligt design */
-  height: 60px;
-  border-radius: 50%;        /* gör det cirkulärt om planeter ska se ut som cirklar */
-  border: 2px solid #ffffff; /* t.ex. vit kant */
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;               /* textfärg */
-  font-size: 0.9rem;         /* textstorlek enligt design */
+  border-radius: 50%;  /* gör att planeter ser ut som cirklar */
   cursor: pointer;
   transition: transform 0.2s, opacity 0.2s;
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  left: 280px;
+  top: 437px;
+  background: #E7CDCD;
+  font-size: 0;
 }
 .venus:hover {
   transform: scale(1.2);     /* hover-effekt enligt design */
@@ -112,18 +97,16 @@ body {
 }
 
 .jorden {
-  background-color: #4a90e2; /* färg från Figma */
-  width: 60px;               /* storlek enligt design */
-  height: 60px;
-  border-radius: 50%;        /* gör det cirkulärt om planeter ska se ut som cirklar */
-  border: 2px solid #ffffff; /* t.ex. vit kant */
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;               /* textfärg */
-  font-size: 0.9rem;         /* textstorlek enligt design */
+  border-radius: 50%; /* gör att planeter ser ut som cirklar */
   cursor: pointer;
   transition: transform 0.2s, opacity 0.2s;
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  left: 375px;
+  top: 436px;
+  background: #428ED5;
+  font-size: 0;
 }
 .jorden:hover {
   transform: scale(1.2);     /* hover-effekt enligt design */
@@ -131,18 +114,16 @@ body {
 }
 
 .mars {
-  background-color: #4a90e2; /* färg från Figma */
-  width: 60px;               /* storlek enligt design */
-  height: 60px;
-  border-radius: 50%;        /* gör det cirkulärt om planeter ska se ut som cirklar */
-  border: 2px solid #ffffff; /* t.ex. vit kant */
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;               /* textfärg */
-  font-size: 0.9rem;         /* textstorlek enligt design */
+  border-radius: 50%; /* gör att planeter ser ut som cirklar */
   cursor: pointer;
   transition: transform 0.2s, opacity 0.2s;
+  font-size: 0;
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  left: 473px;
+  top: 443px;
+  background: #EF5F5F;
 }
 .mars:hover {
   transform: scale(1.2);     /* hover-effekt enligt design */
@@ -150,18 +131,15 @@ body {
 }
 
 .jupiter {
-  background-color: #4a90e2; /* färg från Figma */
-  width: 60px;               /* storlek enligt design */
-  height: 60px;
-  border-radius: 50%;        /* gör det cirkulärt om planeter ska se ut som cirklar */
-  border: 2px solid #ffffff; /* t.ex. vit kant */
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;               /* textfärg */
-  font-size: 0.9rem;         /* textstorlek enligt design */
+  border-radius: 50%; /* gör att planeter ser ut som cirklar */
   cursor: pointer;
   transition: transform 0.2s, opacity 0.2s;
+  font-size: 0;
+  position: absolute;
+  width: 188px;
+  height: 188px;
+  left: 576px;
+  top: 356px;background: #E29468;
 }
 .jupiter:hover {
   transform: scale(1.2);     /* hover-effekt enligt design */
@@ -169,37 +147,43 @@ body {
 }
 
 .saturnus {
-  background-color: #4a90e2; /* färg från Figma */
-  width: 60px;               /* storlek enligt design */
-  height: 60px;
-  border-radius: 50%;        /* gör det cirkulärt om planeter ska se ut som cirklar */
-  border: 2px solid #ffffff; /* t.ex. vit kant */
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;               /* textfärg */
-  font-size: 0.9rem;         /* textstorlek enligt design */
+  border-radius: 50%; /* gör att planeter ser ut som cirklar */
   cursor: pointer;
   transition: transform 0.2s, opacity 0.2s;
+  font-size: 0;
+  position: absolute;
+  width: 144px;
+  height: 144px;
+  left: 875px;
+  top: 378px;
+  background: #C7AA72;
 }
 .saturnus:hover {
   transform: scale(1.2);     /* hover-effekt enligt design */
   opacity: 0.9;
 }
+.saturnus-ring {
+position: absolute;
+width: 218.23px;
+height: 5.5px;
+left: 851.13px;
+top: 393.06px;
+
+background: rgba(255, 255, 255, 0.4);
+transform: rotate(-30deg);
+}
 
 .uranus {
-  background-color: #4a90e2; /* färg från Figma */
-  width: 60px;               /* storlek enligt design */
-  height: 60px;
-  border-radius: 50%;        /* gör det cirkulärt om planeter ska se ut som cirklar */
-  border: 2px solid #ffffff; /* t.ex. vit kant */
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;               /* textfärg */
-  font-size: 0.9rem;         /* textstorlek enligt design */
+  border-radius: 50%; /* gör att planeter ser ut som cirklar */
   cursor: pointer;
   transition: transform 0.2s, opacity 0.2s;
+  font-size: 0;
+  position: absolute;
+  width: 66px;
+  height: 66px;
+  left: 1136px;
+  top: 417px;
+  background: #C9D4F1;
 }
 .uranus:hover {
   transform: scale(1.2);     /* hover-effekt enligt design */
@@ -207,46 +191,21 @@ body {
 }
 
 .neptunus {
-  background-color: #4a90e2; /* färg från Figma */
-  width: 60px;               /* storlek enligt design */
-  height: 60px;
-  border-radius: 50%;        /* gör det cirkulärt om planeter ska se ut som cirklar */
-  border: 2px solid #ffffff; /* t.ex. vit kant */
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;               /* textfärg */
-  font-size: 0.9rem;         /* textstorlek enligt design */
+  border-radius: 50%;/* gör att planeter ser ut som cirklar */
   cursor: pointer;
   transition: transform 0.2s, opacity 0.2s;
+  font-size: 0;
+  position: absolute;
+  width: 66px;
+  height: 66px;
+  left: 1306px;
+  top: 417px;
+  background: #7A91A7;
 }
 .neptunus:hover {
   transform: scale(1.2);     /* hover-effekt enligt design */
   opacity: 0.9;
 }
-
-/* Planet styling */
-/* Planet lista styling*/
-.planet-nav ul {
-  list-style: none;
-  padding: 100px;
-  margin: 20px 0;
-  display: flex;
-  gap: 15px;
-  justify-content: center;
-}
-/* Planet knapp styling */
-.planet-nav button {
-  width: 40px;
-  height: 40px;
-  background: white;
-  border-radius: 50%;
-  opacity: 0.7;
-  border: none;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
 
 /* Info-sektionen, gömd tills att den klickas på */
 .hidden {
