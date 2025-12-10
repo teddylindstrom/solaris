@@ -57,6 +57,7 @@ function renderPlanetList(planets) {
 // planet-info overlay
 function loadPlanetInfo(planet) {
     const overlay = document.getElementById("overlay");
+    console.log("Visar info för planet:", planet.name);
 
     overlay.innerHTML = `
         <div class="planet-info">
@@ -73,6 +74,7 @@ function loadPlanetInfo(planet) {
 
     document.getElementById("close").addEventListener("click", () => {
         overlay.classList.add("hidden");
+        //console.log("Stängde planet-info overlay");
     });
 }
 
