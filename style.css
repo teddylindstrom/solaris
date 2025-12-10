@@ -1,5 +1,12 @@
 /*Grundstil för hela sidan*/
 
+.planet-list {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+
 /*Body styling*/
 body {
   width: 100vw;
@@ -37,7 +44,6 @@ header h2 {
 
 .solen {
   /*mått rektangel*/
-  position: absolute;
   width: 118px;
   height: 740.12px;
   left: 0px;
@@ -55,6 +61,7 @@ header h2 {
   background: #FFD029;
   box-shadow: 0px 0px 250px rgba(255, 208, 41, 0.2);
   font-size: 0;
+  position: absolute;
 }
 .solen:hover {
   transform: scale(1.2);     /* hover-effekt enligt design */
@@ -66,13 +73,13 @@ header h2 {
   display: inline-flex;
   cursor: pointer;
   transition: transform 0.2s, opacity 0.2s;
-  position: absolute;
   width: 14px;
   height: 14px;
   left: 203px;
   top: 443px;
   background: #888888;
   font-size: 0;
+  position: absolute;
 }
 .merkurius:hover {
   transform: scale(1.2);     /* hover-effekt enligt design */
@@ -83,13 +90,13 @@ header h2 {
   border-radius: 50%;  /* gör att planeter ser ut som cirklar */
   cursor: pointer;
   transition: transform 0.2s, opacity 0.2s;
-  position: absolute;
   width: 26px;
   height: 26px;
   left: 280px;
   top: 437px;
   background: #E7CDCD;
   font-size: 0;
+  position: absolute;
 }
 .venus:hover {
   transform: scale(1.2);     /* hover-effekt enligt design */
@@ -100,13 +107,13 @@ header h2 {
   border-radius: 50%; /* gör att planeter ser ut som cirklar */
   cursor: pointer;
   transition: transform 0.2s, opacity 0.2s;
-  position: absolute;
   width: 28px;
   height: 28px;
   left: 375px;
   top: 436px;
   background: #428ED5;
   font-size: 0;
+  position: absolute;
 }
 .jorden:hover {
   transform: scale(1.2);     /* hover-effekt enligt design */
@@ -118,12 +125,12 @@ header h2 {
   cursor: pointer;
   transition: transform 0.2s, opacity 0.2s;
   font-size: 0;
-  position: absolute;
   width: 14px;
   height: 14px;
   left: 473px;
   top: 443px;
   background: #EF5F5F;
+  position: absolute;
 }
 .mars:hover {
   transform: scale(1.2);     /* hover-effekt enligt design */
@@ -135,11 +142,11 @@ header h2 {
   cursor: pointer;
   transition: transform 0.2s, opacity 0.2s;
   font-size: 0;
-  position: absolute;
   width: 188px;
   height: 188px;
   left: 576px;
   top: 356px;background: #E29468;
+  position: absolute;
 }
 .jupiter:hover {
   transform: scale(1.2);     /* hover-effekt enligt design */
@@ -151,19 +158,18 @@ header h2 {
   cursor: pointer;
   transition: transform 0.2s, opacity 0.2s;
   font-size: 0;
-  position: absolute;
   width: 144px;
   height: 144px;
   left: 875px;
   top: 378px;
   background: #C7AA72;
+  position: absolute;
 }
 .saturnus:hover {
   transform: scale(1.2);     /* hover-effekt enligt design */
   opacity: 0.9;
 }
 .saturnus-ring {
-position: absolute;
 width: 218.23px;
 height: 5.5px;
 left: 851.13px;
@@ -178,12 +184,12 @@ transform: rotate(-30deg);
   cursor: pointer;
   transition: transform 0.2s, opacity 0.2s;
   font-size: 0;
-  position: absolute;
   width: 66px;
   height: 66px;
   left: 1136px;
   top: 417px;
   background: #C9D4F1;
+  position: absolute;
 }
 .uranus:hover {
   transform: scale(1.2);     /* hover-effekt enligt design */
@@ -195,12 +201,12 @@ transform: rotate(-30deg);
   cursor: pointer;
   transition: transform 0.2s, opacity 0.2s;
   font-size: 0;
-  position: absolute;
   width: 66px;
   height: 66px;
   left: 1306px;
   top: 417px;
   background: #7A91A7;
+  position: absolute;
 }
 .neptunus:hover {
   transform: scale(1.2);     /* hover-effekt enligt design */

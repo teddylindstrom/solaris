@@ -2,31 +2,25 @@
 <html lang="sv">
 <head>
   <meta charset="UTF-8" />
-  <!--Gör sidan responsiv mot mobil och desktop-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Solaris</title>
-  <!--Kopplar CSS filen-->
   <link rel="stylesheet" href="style.css" />
-  <!--Rubrik-->
+</head>
+
+<body>
+
   <header>
       <h1>SOLSYSTEMET</h1>
-        <h2>SOLARIS</h2>
-    </header>
-</head>
-<body>
+      <h2>SOLARIS</h2>
+  </header>
+
   <main>
-
-    <!-- Planet lista dynamiskt -->
-    <section id="planet-list" class="planet-list" class="hero">
-    </section>
-
-
-
-    
-
+      <section id="planet-list" class="planet-list"></section>
   </main>
-    <!--Importerar API-nyckelfilen och huvud-JS-->
-    <script src="app.js"></script>
 
+  <!-- Overlay-popup -->
+  <div id="overlay" class="hidden"></div>
+
+  <script src="app.js"></script>
 </body>
 </html>
