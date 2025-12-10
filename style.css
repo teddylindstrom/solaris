@@ -1,9 +1,12 @@
 /*Grundstil för hela sidan*/
 
 .planet-list {
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   width: 100%;
   height: 100vh;
+  position: relative;
 }
 
 
@@ -24,7 +27,9 @@ body {
 header h1 {
     font-size: 3rem;
     font: secular one, sans-serif;
-    margin: 20px 0;
+    margin: 5px 0;
+    margin-right: 20px;
+    margin-bottom: 0;
     color: white;
     font-weight: 600;
     text-align: right;
@@ -35,6 +40,9 @@ header h1 {
 header h2 {
     font-size: rem;
     font: lora, serif;
+    margin-top: 0;
+    margin-right: 20px;
+    margin-bottom: -50px;
     color: rgb(228, 160, 24);
     text-align: right;
     padding: 10px;
@@ -42,24 +50,45 @@ header h2 {
     padding-top: 5px;
 }
 
+/* Solsystemet */
+/* Planet-styling */
+.solar-system {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+.planets {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.planet {
+  border: none;
+  border-radius: 50%; /* gör att planeter ser ut som cirklar */
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
 .solen {
   /*mått rektangel*/
-  width: 118px;
-  height: 740.12px;
+  width: 59px;
+  height: 370.06px;
   left: 0px;
-  top: 79.94px;
+  top: 39.97px;
   /*mått cirkel*/
-  width: 1278px;
-  height: 1278px;
-  left: -1160px;
-  top: -189px;
+  width: 639px;
+  height: 639px;
+  left: -580px;
+  top: -94.5px;
   box-shadow: 0px 0px 250px rgba(255, 208, 41, 0.2); /* skugga för att ge en glödande effekt */
   display: inline-flex;
   border-radius: 50%; /* gör att planeter ser ut som cirklar */
   cursor: pointer;
   transition: transform 0.2s, opacity 0.2s;
   background: #FFD029;
-  box-shadow: 0px 0px 250px rgba(255, 208, 41, 0.2);
   font-size: 0;
   position: absolute;
 }
@@ -73,10 +102,10 @@ header h2 {
   display: inline-flex;
   cursor: pointer;
   transition: transform 0.2s, opacity 0.2s;
-  width: 14px;
-  height: 14px;
-  left: 203px;
-  top: 443px;
+  width: 7px;
+  height: 7px;
+  left: 101.5px;
+  top: 221.5px;
   background: #888888;
   font-size: 0;
   position: absolute;
@@ -90,10 +119,10 @@ header h2 {
   border-radius: 50%;  /* gör att planeter ser ut som cirklar */
   cursor: pointer;
   transition: transform 0.2s, opacity 0.2s;
-  width: 26px;
-  height: 26px;
-  left: 280px;
-  top: 437px;
+  width: 13px;
+  height: 13px;
+  left: 140px;
+  top: 218.5px;
   background: #E7CDCD;
   font-size: 0;
   position: absolute;
@@ -107,10 +136,10 @@ header h2 {
   border-radius: 50%; /* gör att planeter ser ut som cirklar */
   cursor: pointer;
   transition: transform 0.2s, opacity 0.2s;
-  width: 28px;
-  height: 28px;
-  left: 375px;
-  top: 436px;
+  width: 14px;
+  height: 14px;
+  left: 187.5px;
+  top: 218px;
   background: #428ED5;
   font-size: 0;
   position: absolute;
@@ -125,10 +154,10 @@ header h2 {
   cursor: pointer;
   transition: transform 0.2s, opacity 0.2s;
   font-size: 0;
-  width: 14px;
-  height: 14px;
-  left: 473px;
-  top: 443px;
+  width: 7px;
+  height: 7px;
+  left: 236.5px;
+  top: 221.5px;
   background: #EF5F5F;
   position: absolute;
 }
@@ -142,10 +171,10 @@ header h2 {
   cursor: pointer;
   transition: transform 0.2s, opacity 0.2s;
   font-size: 0;
-  width: 188px;
-  height: 188px;
-  left: 576px;
-  top: 356px;background: #E29468;
+  width: 94px;
+  height: 94px;
+  left: 288px;
+  top: 178px;background: #E29468;
   position: absolute;
 }
 .jupiter:hover {
@@ -158,10 +187,10 @@ header h2 {
   cursor: pointer;
   transition: transform 0.2s, opacity 0.2s;
   font-size: 0;
-  width: 144px;
-  height: 144px;
-  left: 875px;
-  top: 378px;
+  width: 72px;
+  height: 72px;
+  left: 437.5px;
+  top: 189px;
   background: #C7AA72;
   position: absolute;
 }
@@ -170,10 +199,10 @@ header h2 {
   opacity: 0.9;
 }
 .saturnus-ring {
-width: 218.23px;
-height: 5.5px;
-left: 851.13px;
-top: 393.06px;
+width: 109,115px;
+height: 2.75px;
+left: 425,5px;
+top: 196,53px;
 
 background: rgba(255, 255, 255, 0.4);
 transform: rotate(-30deg);
@@ -184,10 +213,10 @@ transform: rotate(-30deg);
   cursor: pointer;
   transition: transform 0.2s, opacity 0.2s;
   font-size: 0;
-  width: 66px;
-  height: 66px;
-  left: 1136px;
-  top: 417px;
+  width: 33px;
+  height: 33px;
+  left: 568px;
+  top: 208.5px;
   background: #C9D4F1;
   position: absolute;
 }
@@ -201,10 +230,10 @@ transform: rotate(-30deg);
   cursor: pointer;
   transition: transform 0.2s, opacity 0.2s;
   font-size: 0;
-  width: 66px;
-  height: 66px;
-  left: 1306px;
-  top: 417px;
+  width: 33px;
+  height: 33px;
+  left: 653px;
+  top: 208.5px;
   background: #7A91A7;
   position: absolute;
 }
@@ -228,7 +257,7 @@ transform: rotate(-30deg);
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  background-color: rgba(4, 5, 76, 0.5); /* Black background with opacity */
   z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
   cursor: pointer; /* Add a pointer on hover */
 }
