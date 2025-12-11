@@ -1,13 +1,11 @@
 /*Grundstil för hela sidan*/
 
-.planet-list {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width: 100%;
-  height: 100vh;
-  position: relative;
-}
+/* Jag är nöjd men inser absolut att jag hade kunnat göra det enklare för mig i min styling genom att använda mig utav .planets eller .planet-styling i någon version. Jag tog dock beslutet att fortsätta på det viset som jag påbörjat projektet. P.g.a tidsbrist så har jag inte möjlighet att göra om hela projektet just nu.
+Jag tänker dock genomföra en ny version som jag förenklar och slipper göra så mycket upprepning av style och mått som jag har gjort i det här projektet. 
+Det har krävt mycket tid och såhär i efterhand ser jag att det finns mer effektiva sätt att genomföra samma sak på. 
+Jag har lärt mig oerhört mycket i den här kursen men känner att det är en del som inte riktigt sitter än. Därför kommer jag göra om det här projektet och även den Amazon/e-handelssajt som jag kodar på egen hand för att se till att jag verkligen förstår allt jag lärt mig under kursens gång.
+Mvh Teddy
+*/
 
 
 /*Body styling*/
@@ -52,26 +50,6 @@ header h2 {
 
 /* Solsystemet */
 /* Planet-styling */
-.solar-system {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 80vh;
-}
-
-.planets {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-}
-
-.planet {
-  border: none;
-  border-radius: 50%; /* gör att planeter ser ut som cirklar */
-  cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.3s ease;
-}
-
 .solen {
   /*mått rektangel*/
   width: 59px;

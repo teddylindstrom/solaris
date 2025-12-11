@@ -63,9 +63,11 @@ function loadPlanetInfo(planet) {
         <div class="planet-info">
             <h2>${planet.name}</h2>
             <p>Typ: ${planet.type}</p>
-            <p>Radie: ${planet.radius} km</p>
+            <p>Beskrivning: ${planet.desc}</p>
             <p>Omkrets: ${planet.circumference} km</p>
-            <p>Max temperatur: ${planet.temp.max} °C</p>
+            <p>Avstånd från solen: ${planet.distance} miljoner km</p>
+            <p>Max temperatur: ${planet.temp.day} °C</p>
+            <p>Min temperatur: ${planet.temp.night} °C</p>
             <button id="close">Stäng</button>
         </div>
     `;
