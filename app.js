@@ -1,7 +1,7 @@
 // Bas-URL för API:et
 const BASE_URL = "https://4a6l0o1px9.execute-api.eu-north-1.amazonaws.com";
 
-// Dynamisk API-nyckel (VG-krav)
+// Dynamisk API-nyckel hämtas här
 async function getApiKey() {
     // Kan bytas mot riktig server senare
     return "solaris-zaCmZA74PLKCrD8Y";
@@ -34,7 +34,6 @@ async function fetchBodies() {
 
 
 // Rendera planet-listan
-
 function renderPlanetList(planets) {
     const list = document.getElementById("planet-list");
     list.innerHTML = "";
@@ -54,7 +53,7 @@ function renderPlanetList(planets) {
     });
 }
 
-// planet-info overlay
+// Planet-info overlay
 function loadPlanetInfo(planet) {
     const overlay = document.getElementById("overlay");
     console.log("Visar info för planet:", planet.name);
@@ -82,5 +81,4 @@ function loadPlanetInfo(planet) {
 
 
 //Starta appen när sidan är laddad
-
 window.addEventListener("load", fetchBodies);
